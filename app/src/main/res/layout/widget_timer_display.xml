@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Active Timers"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/cooking_mode_text_primary"
+        android:layout_marginBottom="8dp"
+        android:drawableStart="@drawable/ic_timer_24"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical" />
+
+    <!-- Timers List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/timers_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        tools:listitem="@layout/item_active_timer" />
+
+    <!-- No Timers Message -->
+    <TextView
+        android:id="@+id/no_timers_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No active timers"
+        android:textSize="14sp"
+        android:textColor="@color/cooking_mode_text_secondary"
+        android:gravity="center"
+        android:padding="16dp"
+        android:visibility="visible"
+        tools:visibility="gone" />
+
+</LinearLayout>

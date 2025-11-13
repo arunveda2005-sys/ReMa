@@ -1,0 +1,43 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pantryFragment">
+
+    <fragment
+        android:id="@+id/pantryFragment"
+        android:name="com.example.receipematcher.ui.pantry.PantryFragment"
+        android:label="Pantry" />
+
+    <fragment
+        android:id="@+id/recipeListFragment"
+        android:name="com.example.receipematcher.ui.recipes.RecipeListFragment"
+        android:label="Recipes" >
+        <action
+            android:id="@+id/action_recipeListFragment_to_aiRecipeDetailFragment"
+            app:destination="@id/aiRecipeDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aiRecipeDetailFragment"
+        android:name="com.example.receipematcher.ui.recipes.AiRecipeDetailFragment"
+        android:label="Recipe" >
+        <action
+            android:id="@+id/action_aiRecipeDetailFragment_to_cookingFragment"
+            app:destination="@id/cookingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.example.receipematcher.ui.favourites.FavouritesFragment"
+        android:label="@string/favorites" />
+
+    <fragment
+        android:id="@+id/shoppingFragment"
+        android:name="com.example.receipematcher.ui.shopping.ShoppingFragment"
+        android:label="@string/shopping_list" />
+
+    <fragment
+        android:id="@+id/cookingFragment"
+        android:name="com.example.receipematcher.ui.recipes.CookingFragment"
+        android:label="Cooking" />
+</navigation>

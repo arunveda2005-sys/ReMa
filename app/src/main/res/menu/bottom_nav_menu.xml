@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/pantryFragment"
+        android:title="Pantry"
+        android:icon="@drawable/ic_pantry"/>
+    <item
+        android:id="@+id/recipeListFragment"
+        android:title="Recipes"
+        android:icon="@drawable/ic_recipe"/>
+    <item
+        android:id="@+id/shoppingFragment"
+        android:title="Shopping"
+        android:icon="@drawable/ic_cart"/>
+</menu>

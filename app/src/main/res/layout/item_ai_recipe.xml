@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.App.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Header Section with Match Score -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <!-- Match Score Indicator -->
+            <com.example.receipematcher.ui.components.CircularProgressIndicator
+                android:id="@+id/matchScoreIndicator"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                app:progress="0"
+                app:strokeWidth="3dp"
+                app:showText="true" />
+
+            <!-- Recipe Title and Category Badges -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recipe Title"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_primary"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
+
+                <!-- Category Badges Container -->
+                <LinearLayout
+                    android:id="@+id/categoryBadgesContainer"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/badgeQuick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quick"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/badge_quick"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_marginEnd="4dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/badgeHealthy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Healthy"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/badge_healthy"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_marginEnd="4dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/badgePopular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Popular"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/badge_popular"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_marginEnd="4dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/badgeTrending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trending"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/badge_trending"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFavorite"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/favorite"
+                app:icon="@drawable/ic_star"
+                app:iconTint="@color/text_hint"
+                app:iconPadding="0dp" />
+        </LinearLayout>
+
+        <!-- Recipe Metadata -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <!-- Cooking Time -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:id="@+id/textCookingTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30 min"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:drawableStart="@drawable/ic_restaurant"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/text_hint" />
+            </LinearLayout>
+
+            <!-- Difficulty -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:id="@+id/textDifficulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Easy"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+
+            <!-- Rating -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:drawableStart="@drawable/ic_star_filled"
+                    android:drawablePadding="2dp"
+                    android:drawableTint="@color/warning" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Missing Ingredients Counter -->
+        <LinearLayout
+            android:id="@+id/missingIngredientsContainer"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textMissingIngredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need 3 ingredients"
+                android:textSize="12sp"
+                android:textColor="@color/warning"
+                android:drawableStart="@drawable/ic_shopping_cart"
+                android:drawablePadding="4dp"
+                android:drawableTint="@color/warning" />
+
+        </LinearLayout>
+
+        <!-- Ingredients preview -->
+        <TextView
+            android:id="@+id/textIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients preview"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="8dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="end">
+
+            <!-- View Recipe Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnViewRecipe"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Recipe"
+                android:textColor="@color/primary"
+                android:fontFamily="sans-serif-medium"
+                android:minHeight="36dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

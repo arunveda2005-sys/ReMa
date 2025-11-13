@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="0dp"
+    android:backgroundTint="@color/primary_container">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textSelectedCount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="0 selected"
+            android:textSize="16sp"
+            android:textColor="@color/primary"
+            android:fontFamily="sans-serif-medium" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBatchEdit"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_marginEnd="8dp"
+            app:icon="@drawable/ic_edit"
+            app:iconTint="@color/primary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBatchShop"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop"
+            android:layout_marginEnd="8dp"
+            app:icon="@drawable/ic_shopping_cart"
+            app:iconTint="@color/secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBatchDelete"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginEnd="8dp"
+            app:icon="@drawable/ic_delete"
+            app:iconTint="@color/error" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBatchCancel"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="Cancel selection"
+            app:icon="@drawable/ic_close"
+            app:iconTint="@color/text_secondary" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

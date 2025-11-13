@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_favorites"
+        android:title="@string/favorites"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_star_filled" />
+    <item
+        android:id="@+id/menu_shopping"
+        android:title="@string/shopping_list"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_cart" />
+</menu>

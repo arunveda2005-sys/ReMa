@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.App.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="12dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="96dp"
+        android:padding="16dp">
+
+        <!-- Color indicator for expiry status -->
+        <View
+            android:id="@+id/expiryIndicator"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:background="@color/success"
+            android:layout_marginEnd="16dp"
+            android:minHeight="60dp" />
+
+        <!-- Ingredient info with improved hierarchy -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredient Name"
+                android:textSize="18sp"
+                android:textColor="@color/text_primary"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginBottom="4dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:fontFamily="sans-serif"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/dot_separator" />
+
+                <TextView
+                    android:id="@+id/textExpiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expiry Date"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+
+            <!-- Quick action buttons row -->
+            <LinearLayout
+                android:id="@+id/quickActionsLayout"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnQuickEdit"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Edit"
+                    android:textSize="12sp"
+                    android:minWidth="0dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:icon="@drawable/ic_edit"
+                    app:iconSize="16dp"
+                    app:iconTint="@color/primary" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnQuickShop"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Shop"
+                    android:textSize="12sp"
+                    android:minWidth="0dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:icon="@drawable/ic_shopping_cart"
+                    app:iconSize="16dp"
+                    app:iconTint="@color/secondary" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnQuickRecipe"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Recipe"
+                    android:textSize="12sp"
+                    android:minWidth="0dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    app:icon="@drawable/ic_restaurant"
+                    app:iconSize="16dp"
+                    app:iconTint="@color/accent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Main action buttons with improved styling -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEdit"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/edit_ingredient"
+                app:icon="@drawable/ic_edit"
+                app:iconTint="@color/primary"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                android:background="@drawable/ripple_primary" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDelete"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/delete_ingredient"
+                app:icon="@drawable/ic_delete"
+                app:iconTint="@color/error"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Checkbox for batch selection (initially hidden) -->
+    <CheckBox
+        android:id="@+id/checkboxSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_margin="8dp"
+        android:visibility="gone"
+        android:buttonTint="@color/primary" />
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,93 @@
+<resources>
+    <!-- Material Design 3 Color Palette - Professional and Accessible -->
+
+    <!-- Primary Brand Colors - Vibrant coral/red to match logo -->
+    <color name="primary">#F43D5E</color>
+    <color name="primary_dark">#D92C4D</color>
+    <color name="primary_light">#FF6F8A</color>
+    <color name="primary_container">#FFE6EC</color>
+
+    <!-- Secondary Colors - Complementary pink accents -->
+    <color name="secondary">#FF5573</color>
+    <color name="secondary_dark">#E04461</color>
+    <color name="secondary_light">#FF8AA1</color>
+    <color name="secondary_container">#FFEAF0</color>
+
+    <!-- Accent Colors -->
+    <color name="accent">#00ACC1</color>
+    <color name="accent_light">#4DD0E1</color>
+
+    <!-- Semantic Colors -->
+    <color name="success">#43A047</color>
+    <color name="success_light">#66BB6A</color>
+    <color name="success_container">#E8F5E9</color>
+
+    <color name="warning">#FFA726</color>
+    <color name="warning_light">#FFB74D</color>
+    <color name="warning_container">#FFF3E0</color>
+
+    <color name="error">#E53935</color>
+    <color name="error_light">#EF5350</color>
+    <color name="error_container">#FFEBEE</color>
+
+    <!-- Neutral Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_50">#FAFAFA</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_900">#212121</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#9E9E9E</color>
+    <color name="text_disabled">#BDBDBD</color>
+    <color name="text_inverse">#FFFFFF</color>
+
+    <!-- Background Colors -->
+    <color name="background">#FFF4F6</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#FFEFF2</color>
+
+    <!-- Overlay Colors -->
+    <color name="overlay_light">#0D000000</color>
+    <color name="overlay_medium">#1F000000</color>
+    <color name="overlay_dark">#61000000</color>
+
+    <!-- Divider -->
+    <color name="divider">#E0E0E0</color>
+
+    <!-- Cooking Mode Colors -->
+    <color name="cooking_mode_background">#1A1A1A</color>
+    <color name="cooking_mode_header_background">#2D2D2D</color>
+    <color name="cooking_mode_controls_background">#2D2D2D</color>
+    <color name="cooking_mode_text_primary">#FFFFFF</color>
+    <color name="cooking_mode_text_secondary">#CCCCCC</color>
+    
+    <color name="cooking_step_active">#FFFFFF</color>
+    <color name="cooking_step_completed">#E8F5E9</color>
+    
+    <color name="cooking_progress_color">#43A047</color>
+    <color name="cooking_progress_background">#E0E0E0</color>
+    
+    <color name="cooking_nav_button_icon">#FFFFFF</color>
+    <color name="cooking_finish_button_color">#43A047</color>
+    <color name="cooking_exit_fab_color">#E53935</color>
+    
+    <color name="cooking_checkbox_color">#43A047</color>
+    <color name="cooking_timer_text_color">#FB8C00</color>
+    <color name="cooking_timer_button_color">#FB8C00</color>
+
+    <!-- Legacy support (kept for backward compatibility) -->
+    <color name="purple_500">#1565C0</color>
+    <color name="purple_700">#0D47A1</color>
+    <color name="teal_200">#00ACC1</color>
+    <color name="gray_light">#F5F5F5</color>
+</resources>

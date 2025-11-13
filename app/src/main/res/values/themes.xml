@@ -1,0 +1,82 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme using Material3 -->
+    <style name="Theme.RecipeMatcher" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_dark</item>
+        <item name="colorSecondaryContainer">@color/secondary_container</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Tertiary Colors -->
+        <item name="colorTertiary">@color/accent</item>
+        <item name="colorTertiaryContainer">@color/success_container</item>
+
+        <!-- Error Colors -->
+        <item name="colorError">@color/error</item>
+        <item name="colorErrorContainer">@color/error_container</item>
+        <item name="colorOnError">@color/white</item>
+
+        <!-- Background Colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- System Bar Colors -->
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+
+        <!-- Text Appearance -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <!-- Material Components -->
+        <item name="materialCardViewStyle">@style/Widget.App.CardView</item>
+        <item name="floatingActionButtonStyle">@style/Widget.App.FloatingActionButton</item>
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+        <item name="toolbarStyle">@style/Widget.App.Toolbar</item>
+    </style>
+
+    <!-- Cooking Mode Theme - Full screen immersive experience -->
+    <style name="Theme.RecipeMatcher.CookingMode" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Dark theme optimized for cooking -->
+        <item name="android:colorBackground">@color/cooking_mode_background</item>
+        <item name="colorSurface">@color/cooking_mode_background</item>
+        <item name="colorOnSurface">@color/cooking_mode_text_primary</item>
+        
+        <!-- System bars -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        
+        <!-- Full screen flags -->
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+        
+        <!-- Keep screen on -->
+        <item name="android:keepScreenOn">true</item>
+    </style>
+
+    <!-- Splash Theme -->
+    <style name="Theme.RecipeMatcher.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+
+</resources>
