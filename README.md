@@ -6,6 +6,14 @@ An intelligent Android application that transforms pantry management and meal pl
 
 RecipeMatcher helps you reduce food waste, discover recipes based on available ingredients, and streamline your cooking experience. Never wonder "what can I cook?" again - let AI suggest recipes based on what's already in your pantry.
 
+## 📥 Download
+
+**Latest Version: v1.0.0**
+
+[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/arunveda2005-sys/ReMa/raw/main/releases/RecipeMatcher-v1.0.0.apk)
+
+Or visit the [Releases](https://github.com/arunveda2005-sys/ReMa/releases) page for all versions.
+
 ## ✨ Key Features
 
 ### 🥘 Smart Pantry Management
